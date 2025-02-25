@@ -45,23 +45,7 @@ The script follows these steps to parse the JSON and generate `server.js`:
 3. **Identify routes** (e.g., `/login`, `/user`) and dynamically create Express routes.
 4. **Attach necessary middleware** based on the node properties.
 5. **Write the generated server code** to `output/server.js`.
-
----
-
-## 📌 API Endpoints
-| Method | Endpoint   | Authentication |
-|--------|-----------|----------------|
-| GET    | /home     | ❌ No          |
-| GET    | /about    | ❌ No          |
-| POST   | /login    | ✅ Yes         |
-| GET    | /user     | ✅ Yes         |
-| GET    | /admin    | ✅ Admin Only  |
-
-Example request for a **protected route**:
-```bash
-curl -X GET http://localhost:3000/user -H "Authorization: Bearer token"
-```
-
+   
 ---
 
 ## 🛠️ Testing
